@@ -20,13 +20,7 @@ jobs:
         uses: azure/login@v1
         with:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
-
-      - name: Setup java
-        uses: actions/setup-java@v3
-        with:
-          distribution: 'microsoft'
-          java-version: '17'
-          cache: 'maven'
+          
       - name: Install azure dev cli
         run: curl -fsSL https://aka.ms/install-azd.sh | bash
 
