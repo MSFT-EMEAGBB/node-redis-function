@@ -2,6 +2,7 @@
   "name": "node-warm-func",
   "version": "1.0.0",
   "description": "",
+  "main": "startup.mjs",
   "scripts": {
     "start": "func start",
     "test": "echo \"No tests yet...\""
